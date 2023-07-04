@@ -1,0 +1,20 @@
+:root {
+    --purple--soft: #8a2be2;
+    --purple--medium: #892be29c;
+    --purple--dark: #892be294;
+
+    --color-gradient: linear-gradient(90deg, var(--purple--soft), var(--purple--medium), var(--purple--dark));
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    background: var(--color-gradient);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

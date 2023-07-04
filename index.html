@@ -23,14 +23,14 @@
                         Name:
                         <div class="name_field">
                             <i class="fi fi-sr-user"></i>
-                            <input type="text" name="name" id="name">
+                            <input class="userr" type="text" id="name">
                         </div>
                     </label>
                     <label for="pass">
                         Pass:
                         <div class="pass_field">
                             <i class="fi fi-sr-key"></i>
-                            <input type="password" name="pass" id="pass">
+                            <input class="passwd" type="password" id="pass">
                         </div>
                     </label>
                     <div id="forgot_pass">
@@ -38,10 +38,25 @@
                         Forgot Password?
                     </a>
                     </div>
+
                 </div>
             </div>
-                <button type="submit" id="login_button">Login</button>
+                <input type="submit" id="login_button" onclick="logar(); return false">Login</input>
         </form>
+        <script>
+            function logar() {
+                var login = document.getElementsByClassName('userr')[0].value;
+                var senha = document.getElementsByClassName('passwd')[0].value;
+        
+                if (login === 'a' && senha === 'a') {
+                    alert('ok');
+                    location.href = 'site.html'
+                } else if (login !== 'a' || senha !== 'a') {
+                    alert('Usuário ou senha incorretos.');
+                }
+            }
+        </script>
+        
     </main>
 </body>
 </html>
