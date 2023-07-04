@@ -1,19 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://www.flaticon.com/uicons/interface-icons">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel="stylesheet" href="/assets/css/style.css">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
 </head>
 <body>
-    <main>
-        <div>
-            <section id="login_">
-                <input type="text" placeholder="Login" id="login">
-                <input type="password" placeholder="Pass" id="password">
-                <input type="submit">
-            </section>
-        </div>   
+    <main id="container">
+        <form id="login_form">
+            <div id="form_header">
+                <h1>Login</h1>
+                <i id='moon_icon' class="fi fi-ss-eclipse"></i>
+            </div>
+            <div id="form_inputs">
+                <div id="input_box">
+                    <label for="name">
+                        Name:
+                        <div class="name_field">
+                            <i class="fi fi-sr-user"></i>
+                            <input type="text" name="name" id="name">
+                        </div>
+                    </label>
+                    <label for="pass">
+                        Pass:
+                        <div class="pass_field">
+                            <i class="fi fi-sr-key"></i>
+                            <input type="password" name="pass" id="pass">
+                        </div>
+                    </label>
+                    <div id="forgot_pass">
+                    <a href="#">
+                        Forgot Password?
+                    </a>
+                    </div>
+                </div>
+            </div>
+                <button type="submit" id="login_button">Login</button>
+        </form>
     </main>
 </body>
 </html>
