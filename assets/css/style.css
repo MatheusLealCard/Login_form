@@ -1,0 +1,13 @@
+body {
+    margin: auto;
+    background-color: blueviolet;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+    flex-direction: column;
+    gap: 12px;
+}
