@@ -10,6 +10,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-gradient);
+}
+
+#header_logo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    height: 15vh;
+}
+
+
 #container {
     background: var(--color-gradient);
     height: 100vh;

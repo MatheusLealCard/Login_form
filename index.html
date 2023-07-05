@@ -11,7 +11,14 @@
     <title>Login</title>
 </head>
 <body>
+    <header>
+        <div id="header_logo">
+            <img src="/assets/img/digital_dreams_logo-removebg-preview.png" alt="">
+        </div>
+    </header>
+    
     <main id="container">
+
         <form id="login_form">
             <div id="form_header">
                 <h1>Login</h1>
@@ -34,14 +41,14 @@
                         </div>
                     </label>
                     <div id="forgot_pass">
-                    <a href="#">
+                    <a href="forgot.html">
                         Forgot Password?
                     </a>
                     </div>
 
                 </div>
             </div>
-                <input type="submit" id="login_button" onclick="logar(); return false">Login</input>
+                <input type="submit" id="login_button" onclick="logar(); return false"></input>
         </form>
         <script>
             function logar() {

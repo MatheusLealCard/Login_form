@@ -8,19 +8,20 @@
 
     --color-gradient: linear-gradient(90deg, var(--purple--soft), var(--purple--medium), var(--purple--dark));
 }
-
 * {
-    font-family: 'poppins', sans-serif;
+    font-family: poppins, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 #header_logo {
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--color-gradient);
 }
+
 #header_logo img{
     display: flex;
     justify-content: center;
@@ -39,75 +40,48 @@
 
 }
 
-#login_form {
-    background-color:  #ffffffcc;
-    display: flex;
-    flex-direction: column;
-    padding: 30px 40px;
-    border-radius: 10px;
-    gap: 30px;
-    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
-    position: relative;
-    bottom: 100px;
+#box_form {
+        background-color:  #ffffffcc;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 40px;
+        border-radius: 10px;
+        gap: 30px;
+        box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+        position: relative;
+        bottom: 100px;
 }
 
-#form_header {
+
+form {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-#form_header h1 {
-    font-size: 40px;
-    position: relative;
-}
-
-#moon_icon {
-    cursor: pointer;
-    font-size: 20px;
-}
-
-#moon_icon:hover {
-    transform: scale(1.2);
-}
-
-#form_header h1::before {
-    position: absolute;
-    content: '';
-    width: 45%;
-    background-color: var(--purple--dark);
-    height: 3px;
-    bottom: 5px;
-    border-radius: 20px;
-}
-
-#input_box {
-    display: flex;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    gap: 30px;  
-    border: none;
-
 }
 
 input {
+    border: none;
+    border-radius: 20px;
     text-align: center;
 }
-#input_box input {
-    border: none;
-    border-radius: 10px;
 
-} 
+#submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 5px;
 
-#input-box input:focus {
-    outline: none;
 }
 
-#login_button {
+#submit input {
     background: var(--color-gradient);
     border: none;
     padding: 5px;
     cursor: pointer;
     border-radius: 10px;
 }
+
+    
+
